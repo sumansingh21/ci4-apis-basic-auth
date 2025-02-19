@@ -14,7 +14,7 @@ $routes->group("product",["namespace" => "App\Controllers\Api"], function($route
 
     $routes->get("(:num)", "ProductController::getSingleProduct/$1");
 
-    $routes->put("/(:num)", "ProductController::updateProduct/$1");
+    $routes->put("(:num)", "ProductController::updateProduct/$1");
 
-    $routes->delete("/(:num)", "ProductController::deleteProduct/$1");
+    $routes->delete("(:num)", "ProductController::deleteProduct/$1");
 });
